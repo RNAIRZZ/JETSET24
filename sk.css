@@ -1,0 +1,135 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif; /* Font family */
+    background: linear-gradient(135deg, #a8d8ea, #0543a5); /* Background gradient */
+    color: #070606; /* Text color */
+}
+
+/* Header Styles */
+header {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 20px; /* Padding for header */
+    text-align: center; /* Center align text */
+}
+
+h1 {
+    color: #ffcc00; /* Header color */
+    margin: 10px 0; /* Spacing around header */
+}
+
+p {
+    color: #ffffff; /* White text for paragraph */
+}
+
+/* Main Styles */
+main {
+    max-width: 1200px; /* Max width for main content */
+    margin: 20px auto; /* Center the main content */
+    padding: 0 20px; /* Side padding */
+    display: flex; /* Flex display */
+    flex-wrap: wrap; /* Allow wrapping of items */
+    justify-content: center; /* Center align items */
+}
+
+/* Section Styles */
+section {
+    background: linear-gradient(rgb(162, 203, 236), rgb(26, 131, 216)); /* Light blue background */
+    color: #ffffff; /* White text for sections */
+    padding: 15px; /* Padding */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    width: calc(33.33% - 20px); /* Width to have 3 boxes in a row with space */
+    height: auto; /* Automatic height */
+    margin: 10px; /* Space between sections */
+    display: flex; /* Flex display */
+    flex-direction: column; /* Vertical alignment */
+    justify-content: flex-start; /* Align content to the top */
+}
+
+section:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8); /* Deeper shadow on hover */
+}
+
+h2 {
+    font-size: 1.8rem; /* Slightly smaller to fit text better */
+    margin-bottom: 10px; /* Space below heading */
+    color: #ebbc2e; /* Gold color for headings */
+}
+
+p, ul {
+    font-size: 1rem; /* Paragraph and list font size */
+    margin: 5px 0; /* Margin for spacing */
+    color: #0b0404; /* Lighter text color */
+}
+
+ul {
+    padding-left: 20px; /* Indent for list */
+}
+
+ul li {
+    margin-bottom: 5px; /* Space between list items */
+}
+
+/* Video Styles */
+#video {
+    margin: 10px; /* Space around video */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Ensure video fits within box */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Video shadow */
+}
+
+video {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center; /* Center footer text */
+    background-color: #3A3A3A; /* Dark footer background */
+    color: white; /* Footer text color */
+    padding: 20px 0; /* Padding for footer */
+    margin-top: 20px; /* Space above footer */
+}
+
+footer p {
+    margin: 0; /* No margin for footer paragraph */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    section {
+        width: calc(50% - 20px); /* Two boxes per row on smaller screens */
+    }
+
+    h1 {
+        font-size: 2.5rem; /* Adjust header size */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Adjust heading size */
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        width: 100%; /* One box per row on very small screens */
+    }
+
+    h1 {
+        font-size: 2rem; /* Adjust header size */
+    }
+
+    h2 {
+        font-size: 1.2rem; /* Adjust heading size */
+    }
+}

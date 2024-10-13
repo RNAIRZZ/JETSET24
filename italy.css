@@ -1,0 +1,144 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif; /* Font family */
+    background: linear-gradient(135deg, #a8d8ea, #0543a5); /* Background gradient */
+    margin: 0;
+    padding: 0;
+    color: #070606; /* Text color */
+}
+
+/* Header Styles */
+header {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 15px 0; /* Padding for header */
+    text-align: center; /* Center text */
+}
+
+h1 {
+    color: #ffcc00; /* Header color */
+    margin: 20px 0; /* Spacing around header */
+}
+
+p {
+    color: #180707; /* Paragraph text color */
+    font-size: 3.5rem;
+}
+
+/* Main Styles */
+main {
+    max-width: 1200px; /* Max width for main content */
+    margin: 20px auto; /* Center the main content */
+    padding: 0 20px; /* Side padding */
+    display: flex; /* Flex display */
+    flex-wrap: wrap; /* Wrap items to prevent overlap */
+    gap: 20px; /* Add space between boxes to prevent overlap */
+    justify-content: center; /* Center align items */
+}
+
+.logo {
+    width: 150px; /* Set the width of the logo */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Center the logo if needed */
+    margin: 0 auto; /* Center the logo horizontally */
+    border: none; /* Remove border if any */
+}
+
+/* Section Styles */
+.info-box {
+    background: linear-gradient(rgb(162, 203, 236), rgb(26, 131, 216)); /* Light blue background */
+    color: #100505; /* Section text color */
+    padding: 15px; /* Padding */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    width: calc(33.33% - 20px); /* Make boxes take up one-third of the row and prevent overlap */
+    height: auto; /* Auto height to fit content */
+    margin: 10px 0; /* Vertical margin between boxes */
+    display: flex; /* Flex display */
+    flex-direction: column; /* Vertical alignment */
+    justify-content: flex-start; /* Align content to the top */
+    box-sizing: border-box; /* Ensure padding is included within width */
+}
+
+.info-box:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8); /* Deeper shadow on hover */
+}
+
+h2 {
+    font-size: 2.5rem; /* Heading size */
+    margin-bottom: 10px; /* Space below heading */
+    color: #ebbc2e; /* Gold color for headings */
+}
+
+p, ul {
+    font-size: 1.5rem; /* Paragraph and list font size */
+    margin: 5px 0; /* Margin for spacing */
+    overflow: hidden; /* Prevent overflow of text */
+}
+p{
+    color:rgb(18, 7, 7);
+}
+/* List Styles */
+ul {
+    padding-left: 20px; /* Indent for list */
+    font-size: 1.5rem;
+}
+
+ul li {
+    margin-bottom: 5px; /* Space between list items */
+    font-size: 1.5rem;
+}
+
+/* Gallery Styles */
+.gallery {
+    display: flex; /* Flex layout */
+    flex-wrap: wrap; /* Wrap images */
+    gap: 10px; /* Space between images */
+}
+
+.gallery img {
+    width: calc(33.33% - 10px); /* Three images per row with space */
+    height: 33.33; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+    object-fit: cover; /* Cover for images */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Image shadow */
+    transition: transform 0.3s ease; /* Smooth scale effect */
+}
+
+.gallery img:hover {
+    transform: scale(1.05); /* Scale image on hover */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center; /* Center footer text */
+    background-color: #172d98; /* Dark footer background */
+    color: white; /* Footer text color */
+    padding: 20px 0; /* Padding for footer */
+    margin-top: 20px; /* Space above footer */
+}
+
+footer p {
+    margin: 0; /* No margin for footer paragraph */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .info-box {
+        width: calc(50% - 20px); /* Two boxes per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .info-box {
+        width: 100%; /* One box per row on very small screens */
+    }
+}
